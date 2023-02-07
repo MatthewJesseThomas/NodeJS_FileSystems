@@ -6,7 +6,7 @@ Let's see some of the common I/O operation examples using fs module.*/
 // Delete a File on System:-6th
 // const fs = require('fs');
 
-// fs.unlink('Deus Lo Vult.zip', function(){
+// fs.unlink('Deus Lo Vult.bat', function(){
 //     console.log('File Deleted Successfully.');
 // });
 // =======================================================================
@@ -42,10 +42,10 @@ Let's see some of the common I/O operation examples using fs module.*/
 //         console.log('Append Operation Completed.');
 // });
 // =======================================================================
-// Creating & Writing a File:-3rd
+// Creating & Writing a File Of Any Extension(.py, .bat, .zip etc):-3rd
 // const fs = require('fs');
 
-// fs.writeFile('Deus Lo Vult.py', 'God Wills It!!!', function(err) {
+// fs.writeFile('Deus Lo Vult.bat', '"Yummy Source Code!!!"', function(err) {
 //     if(err)
 //         console.log(err);
 //     else
