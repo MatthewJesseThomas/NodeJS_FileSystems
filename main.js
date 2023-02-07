@@ -11,26 +11,26 @@ Let's see some of the common I/O operation examples using fs module.*/
 // });
 // =======================================================================
 // File Open and Read:-5th
-const fs = require('fs');
+// const fs = require('fs');
 
-fs.open('Deus Lo Vult.txt', 'r', function(err, fd){
-    if(err){
-        return console.error(err);
-    };
-const buffr = new Buffer.alloc(1024);
+// fs.open('Deus Lo Vult.txt', 'r', function(err, fd){
+//     if(err){
+//         return console.error(err);
+//     };
+// const buffr = new Buffer.alloc(1024);
 
-fs.read(fd, buffr, 0, buffr.length, 0, function(err, bytes){
-    if(err)
-        throw err;
-    if(bytes > 0){
-        console.log(buffr.slice(0, bytes).toString());
-    }
-    fs.close(fd, function(err){
-        if(err)
-            throw err;
-        });
-    });
-});
+// fs.read(fd, buffr, 0, buffr.length, 0, function(err, bytes){
+//     if(err)
+//         throw err;
+//     if(bytes > 0){
+//         console.log(buffr.slice(0, bytes).toString());
+//     }
+//     fs.close(fd, function(err){
+//         if(err)
+//             throw err;
+//         });
+//     });
+// });
 // =======================================================================
 // Append Content to a File:-4th
 // const fs = require('fs');
